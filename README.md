@@ -1,2 +1,2 @@
 # Stock-Market
-Made by Nibodh Vallapureddy, Shahil Patel, & Keenan Kalra
+Made by Keenan Kalra, Shahil Patel & Nibodh Vallapureddy

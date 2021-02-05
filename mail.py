@@ -1,4 +1,9 @@
-#imports all the python libraries
+# Stock Market
+
+# Allows the user to recive an email when their desired stock reaches a target price
+
+
+#Imports all the python libraries
 import smtplib
 from email.message import EmailMessage
 import yfinance as yf
@@ -29,7 +34,7 @@ msg['To'] = 'stockmarketcsa@gmail.com'
 alerted=False
 
 while 1:
-#Gets the stock data from yahoo finance
+#Retrieves the stock data from yahoo finance
 	df = pdr.get_data_yahoo(stock, start, now)
 	currentClose=df["Adj Close"][-1]
 

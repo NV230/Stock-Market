@@ -1,5 +1,6 @@
-# Calculate daily change from close - previous close
 # Stock Market
+
+# Calculate daily change from close - previous close
 
 import yfinance as yf
 
@@ -16,7 +17,13 @@ for i in range(numOfStocks):
   ticker = firstOne
 
   table = yf.download(ticker)
-
+  
+  print("")
+  print("")
+  print("")
+  print("")
+  print("Daily Change for " + secondOne)
+  print("")
   print(table)
 
 print(stocks)

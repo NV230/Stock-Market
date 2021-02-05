@@ -1,6 +1,6 @@
-# Calculate daily change from close - previous close
-
 # Stock Market
+
+# Calculate daily change from close - previous close
 
 import pandas as pd
 import yfinance as yf
