@@ -5,6 +5,7 @@
 # yahoo finance library is where we get stock market information.
 import yfinance as yf
 
+# Creates an array to hold the inputted tickers 
 stocks = []
 
 #Asks the user the amount of stocks they want to compare
