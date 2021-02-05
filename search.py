@@ -1,20 +1,15 @@
 # Calculate daily change from close - previous close
-
 # Stock Market
 
-import numpy as np
-import pandas as pd
 import yfinance as yf
-from pandas_datareader import data as wb
-import matplotlib.pyplot as plt
-
 
 stocks = []
 
+#Asks the user the amount of stocks they want to compare
 numOfStocks = int(input("How many stocks do you want to compare? \n")) 
-
+#Loop that iterates for the number of stocks that the user wants to compare
 for i in range(numOfStocks):
-  print ("List the stock ticker (ex: WMT) and then the name (ex: Walmart)")
+  print("List the stock ticker (ex: WMT) and then the name (ex: Walmart)")
   firstOne = input("Ticker: ")
   secondOne = input("Name: ")
 
@@ -25,5 +20,3 @@ for i in range(numOfStocks):
   print(table)
 
 print(stocks)
-
-

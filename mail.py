@@ -1,14 +1,12 @@
 #imports all the python libraries
-import os
 import smtplib
-import imghdr
 from email.message import EmailMessage
-
 import yfinance as yf
 import datetime as dt
 import pandas as pd
 from pandas_datareader import data as pdr
 import time
+
 
 #The Email and password of the account sending the email
 EMAIL_ADDRESS = 'stockmarketcsa@gmail.com'
@@ -16,13 +14,13 @@ EMAIL_PASSWORD = 'passwordtest'
 
 msg = EmailMessage()
 
-yf.pdr_override() # <== that's all it takes :-)
-start =dt.datetime(2018,12,1)
+yf.pdr_override() 
+start =dt.datetime(2020,12,1)
 now = dt.datetime.now()
 
-stock="BABA"
+stock="AAPL"
 #Checks to see if ticker (stock) has passed that price.
-TargetPrice=18
+TargetPrice=50
 
 msg['Subject'] = 'Alert on '+ stock+'!'
 msg['From'] = EMAIL_ADDRESS
@@ -59,3 +57,4 @@ while 1:
   
   # To prevent an infinite loop and pauses for 60 seconds.
 	time.sleep(60)
+  
