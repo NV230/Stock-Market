@@ -2,6 +2,7 @@
 
 # Calculate daily change from close - previous close
 
+# yahoo finance library is where we get stock market information.
 import yfinance as yf
 
 stocks = []
