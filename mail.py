@@ -4,7 +4,7 @@
 @authors: Keenan, Nibodh, Shahil
 @Date: Feb 2021
 
-This program is designed to run infinitely, 
+This program is designed to return 
 
 Allows the user to recive an email when their desired stock reaches a target price
 """ 
@@ -30,7 +30,8 @@ yf.pdr_override()
 start =dt.datetime(2020,12,1)
 now = dt.datetime.now()
 
-stock="AAPL"
+stock=""
+
 #Checks to see if ticker (stock) has passed that price.
 TargetPrice = 0
 
@@ -87,3 +88,4 @@ while sendMail:
   
   # To prevent an infinite loop and pauses for 60 seconds.
 	time.sleep(60)
+  
