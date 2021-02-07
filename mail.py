@@ -1,8 +1,8 @@
 # Stock Market
-
 """
 @authors: Keenan, Nibodh, Shahil
 @Date: Feb 2021
+@Version: 3.1
 
 This program is designed to return the target price of stock 
 
@@ -31,8 +31,6 @@ start =dt.datetime(2020,12,1)
 now = dt.datetime.now()
 
 stock=""
-
-#Checks to see if ticker (stock) has passed that price.
 TargetPrice = 0
 
 sendMail = False;
@@ -71,8 +69,8 @@ while sendMail:
 
 		alerted=True
 
-		message =stock +" has activated the alert price of "+ str(TargetPrice) +\
-		 "\nCurrent Price: "+ str(currentClose)
+		message ="You have set the return price on" + stock + "as" + str(TargetPrice) +"." +\
+		 "\nThe current price is " + str(currentClose) + "."
 
 		print(message)
 		msg.set_content(message)
@@ -86,6 +84,6 @@ while sendMail:
 	else:
 		print("No new alerts")
   
-  # To prevent an infinite loop and pauses for 60 seconds.
-	time.sleep(60)
+  # Code runs every fifteen seconds to keep the user updated on if the stock reached a certian price.
+	time.sleep(15)
   

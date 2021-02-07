@@ -6,8 +6,7 @@ More specifically, we looked at how we could integrate stock analysis with Pytho
 For our project, we created three unique market-related programs
 The first program we created was a simple stock comparison program:
 First, this program prompts the user to input the number of companies they would like to look at.
-Second, it asks the user to input the ticker symbol for the company they want.  
-Once the ticker is inputted, the system displays the share price from the past five days along with the share prices from the first five days that the company (IPOs)
+Second, it asks the user to input the ticker symbol for the company they want.  Once the ticker is inputted, the system displays the share price from the past five days along with the share prices from the first five days that the company (IPOs)
 The second step is repeated for the number of times that the user inputted into the first step.
 The second program we created was a cumulative return pyplot:
 Cumulative return is basically the change of a stock price through a certain period of time.
