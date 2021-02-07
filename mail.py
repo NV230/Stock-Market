@@ -7,7 +7,8 @@
 This program is designed to return the target price of stock 
 
 Allows the user to recive an email when their desired stock reaches a target price
-""" 
+"""
+
 #Imports all the python libraries
 # SMTPBLIB - SIMPLE MAIL TRANSFER PROTOCOL
 import smtplib
